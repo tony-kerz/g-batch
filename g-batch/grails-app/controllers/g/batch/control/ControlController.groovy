@@ -9,7 +9,7 @@ class ControlController {
 	ControlService controlService
 
 	def index() {
-		[controls: BatchControl.list()]
+		[controls: BatchControl.list(sort: 'name')]
 	}
 
 	def request() {

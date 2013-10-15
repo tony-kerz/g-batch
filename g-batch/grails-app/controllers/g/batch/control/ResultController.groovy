@@ -9,7 +9,7 @@ class ResultController {
 
 	def index() {
 		log.debug "params=${params}"
-		List<BatchControl> ctls = BatchControl.list()
+		List<BatchControl> ctls = BatchControl.list(sort: 'name')
 		[ctls: ctls]
 	}
 
